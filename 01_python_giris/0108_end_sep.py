@@ -1,0 +1,16 @@
+print("Ne", "Mutlu", "Türk'üm", "Diyene")
+print("Mustafa", "Kemal", "Atatürk")
+print("----------------------------")
+print("Ne", "Mutlu", "Türk'üm", "Diyene", end=".")
+print("Mustafa", "Kemal", "Atatürk")
+print("----------------------------")
+print("Ne", "Mutlu", "Türk'üm", "Diyene")
+print("Mustafa", "Kemal", "Atatürk")
+print("----------------------------")
+print("Ne", "Mutlu", "Türk'üm", "Diyene", sep="+")
+print("Mustafa", "Kemal", "Atatürk")
+print("----------------------------")
+print("İstanbul","Artık","İyice", sep="-", end=">>")
+print("\nÇekilmez","Hal","Aldı", sep="*", end=".")
+
+
