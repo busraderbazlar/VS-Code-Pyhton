@@ -17,7 +17,3 @@ dogumYili = int(input("Doğum Yılı - "))
 yas = 2021-dogumYili
 print(dogumYili,"Yaş", yas)
 
-
-
-
-
