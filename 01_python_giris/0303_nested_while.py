@@ -12,4 +12,4 @@ while i<10:
     i+=1
     j=0
     print() 
-#print alt satırın başlangıcı
+#print() alt satırın başlangıcı
