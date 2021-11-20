@@ -123,7 +123,7 @@ i=0
 while i<sayi:
     if i%5 == 0 and i %7 != 0:
         print(i)
-    i4+=1
+    i+=1
 
 """
 """
@@ -138,14 +138,15 @@ print(adet)
 
 """
 """
-!#region
+#region
 i=0
 sayi= int(input("Lütfen bir sayı giriniz\t:"))
 sayi2= int(input("Lütfen bir sayı giriniz\t:"))
-while sayi<i<sayi2:
+while i:
+    if sayi<sayi2
     print(i)
     i+1
-!"""
+"""
 """
 ad= input("Kullanıcı adı giriniz\t:")
 sifre= int(input("Şifre giriniz\t:"))
@@ -154,7 +155,37 @@ while ad=="admin":
         print("Hoşgeldiniz")
 print("Hatalı Giriş")
 """
+"""
+i, j = 0, 0
+while i<10:
+    while j<10:
+        if i%2 ==0:
+            print(" * ", end= "")
+        else:
+            print(" & ", end= "")
+        j += 1
+    i +=1
+    j = 0
+    print()
+"""
+"""
+#1→  [1-99] arası tek sayıları yan yana yazdıralım
+#2→  Her bir 10 adet sayıda alt satıra alalım
+i = 1
+s = 0
+while i < 100:
+    if s % 10 == 0:
+        print()
+    print(i, end=" ")
+    s += 1
+    i += 2
+"""
 
-
-
+adet, toplam = 0, 0
+sayi = int(input("lütfen sayı giriniz, çıkmak için 0 giriniz... : "))
+while sayi != 0:
+    toplam += sayi
+    adet += 1
+    sayi = int(input("lütfen sayı giriniz, çıkmak için 0 giriniz... : "))
+print(f"girdiğiniz sayıların ortalaması → {toplam/adet}")
 
