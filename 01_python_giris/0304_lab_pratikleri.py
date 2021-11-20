@@ -47,7 +47,7 @@ while i<=10:
     i+=1
     print("*", end=" " )
 """
-
+"""
 i=1
 j=1
 while i<=10:
@@ -58,5 +58,16 @@ while i<=10:
     j=1
     print()
 
+"""
 
+# region ornek_6
 
+#1.  [1-99] arası tek sayıların toplamını yazdıralım
+i = 1
+toplam = 0
+while i < 100:
+    toplam += i
+    i += 2
+print(f"[1-99] arası tek sayıların toplamı → {toplam}")
+
+# endregion
