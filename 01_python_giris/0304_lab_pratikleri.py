@@ -180,7 +180,7 @@ while i < 100:
     s += 1
     i += 2
 """
-
+"""
 adet, toplam = 0, 0
 sayi = int(input("lütfen sayı giriniz, çıkmak için 0 giriniz... : "))
 while sayi != 0:
@@ -189,3 +189,269 @@ while sayi != 0:
     sayi = int(input("lütfen sayı giriniz, çıkmak için 0 giriniz... : "))
 print(f"girdiğiniz sayıların ortalaması → {toplam/adet}")
 
+"""
+"""
+i=1
+while i<=4:
+    print("*"*i, end=" ",)
+    i+=1
+
+"""
+"""
+i=0
+j=7
+while i<4:
+    while j<8:
+        if j%2 !=0:
+            print(1, end="")
+        else:
+            print(0, end="")
+        j-=1
+    i+=1
+    j=7
+    print()
+"""
+
+#region artanlarda ve time kütüphanesi kullanımı
+"""
+import time as t #time kütüphanesini ekle
+i=1
+while i<11:
+    print(i, end=" ")
+    i+=1
+
+    t.sleep(1)#time kütüphanesinde 1 saniye yavaş print yazdır.
+"""
+#endregion
+#region azalanlarda
+"""
+i=10
+while i>1:
+    print(i)
+    i-=1
+#endregion
+#region \r kullanımı
+
+import time as t
+i = 1
+while i<11:
+   print(f"\r{i}", end=" ")#\r satırı soldan seç, sil ,bir daha print yap çıktı ver sıradakini.
+   i += 1
+   t.sleep(1)
+
+"""
+#endregion
+
+#region pratikler
+"""
+gizliKelime=input("Lütfen gizli bir kelime giriniz\t :")
+while gizliKelime!= "susam":
+    print("hahaha ne oldu bilemedin ama =)")
+    gizliKelime=input("Lütfen gizli bir kelime giriniz\t :")
+print("Başardın!")
+
+
+Sayı Giriniz : 5
+5 x 1 = 5
+5 x 2 = 10
+5 X 3 = 15
+5 X 4 = 40
+5 X 5 = 25
+"""
+"""
+sayi= int(input("Lütfen Bir sayı Giriniz\t:"))
+i=1
+while i<=sayi:
+    print(f"{sayi} x {i} = {sayi*i}")
+    i+=1
+"""
+"""
+i=0
+x=0
+while i<100:
+    if i%2==1:
+        print(f"{i}", end=" ")
+        x+=1
+    if x>10:
+        print()
+        x=1
+    i+=1
+"""
+"""
+
+i=0
+toplam=0
+while i<100:
+    if i%2==1:
+        toplam+=i
+    i+=1
+print(f"{toplam}")
+"""
+"""
+i=1
+toplam=0
+while i<6:
+    i+=1
+    sayi=int(input("Bir sayı giriniz\t:"))
+    toplam+=sayi
+print(f"{toplam}")
+"""
+#girilen 5 adet sayının çift olanlarını topla
+"""
+i=1
+toplam=0
+while i<6:
+    i+=1
+    sayi=int(input("Bir sayı giriniz\t:"))
+    if sayi%2==0:
+        toplam+=sayi
+print(f"{toplam}")
+"""
+"""
+i=1
+toplam=0
+while i<6:
+    sayi=int(input("Bir sayı giriniz\t:"))
+    if sayi%2==0:
+        i+=1
+        toplam+=sayi
+print(f"{toplam}")
+"""
+"""
+i=0
+j=0
+while i<5:
+    while j<=i:
+        j+=1
+        print(" * ", end=" ")
+    i+=1
+    j=0
+    print()
+
+"""
+"""
+* * * * * 
+* * * * 
+* * * 
+* * 
+*
+"""
+"""
+i=0
+j=5
+while i<5:
+    while j>0:
+        j-=1
+        print(" * ", end=" ")
+    i+=1
+    j=5-i
+    print()
+"""
+"""
+i=0
+j=5
+while i<5:
+    while j>i:
+        j-=1
+        print(" * ", end=" ")
+    i+=1
+    j=5
+    print()
+"""
+"""
+i=0
+j=0
+b=0
+while i<5:
+    while j<5:
+        if b<i:
+            print("   ", end=" ")
+        else:
+            print(" * ", end=" ")
+        j+=1
+        b+=1
+    i+=1
+    j=0
+    b=0
+    print()
+"""
+"""
+i=0
+j=0
+while i<10:
+    while j<10:
+        if i%2==0:
+            print("*", end=" ")
+        else:
+            print("$", end=" ")
+        j+=1
+    i+=1
+    j=0
+    print()
+"""
+"""
+i=0
+j=0
+while i<10:
+    while j<10:
+        if j%2==0:
+            print("*", end=" ")
+        else:
+            print("$", end=" ")
+        j+=1
+    i+=1
+    j=0
+    print()
+"""
+"""
+i = 0
+j = 0
+while i < 10:
+    while j < 10:
+        if i%2==1:
+            if j%2==0:
+                print(" # ", end=" ")
+            else:
+                print(" $ ", end=" ")
+        else:
+            if j%2==0:
+                print(" $ ", end=" ")
+            else:
+                print(" # ", end=" ")
+        j += 1 
+    i += 1
+    j = 0
+    print ()
+
+"""
+"""
+100-999
+haneleri toplamı, hane sayısına eşit olanları ekrana yazalım
+KOŞULU SAĞLAYAN SAYILAR:
+102 (3 haneli, haneleri toplamı 3)
+111 (3 haneli, haneleri toplamı 3)
+120 (3 haneli, haneleri toplamı 3)
+201 (3 haneli, haneleri toplamı 3)
+210 (3 haneli, haneleri toplamı 3)
+300 (3 haneli, haneleri toplamı 3)
+i = 100
+while i<1000:
+    kalan = i % 10
+    birler = kalan // 1
+    kalan = i % 100
+    onlar = kalan // 10
+    kalan = i % 1000
+    yuzler = kalan //100
+    haneleriToplami = birler + onlar + yuzler
+    if haneleriToplami == 3:
+        print(f"{i} (3 haneli, haneleri toplamı 3)")
+    i += 1
+"""
+#shift+delete tüm satırı silme
+#ctrl+z
+
+
+
+
+
+#endregion
