@@ -450,8 +450,62 @@ while i<1000:
 #shift+delete tüm satırı silme
 #ctrl+z
 
+"""
+sayi1=int(input("Lütfen Bir Sayı Giriniz\t:"))
+sayi2=int(input("Lütfen Bir Sayı Giriniz\t:"))
+i=0
+if sayi1>sayi2:
+    sayi1,sayi2=sayi2,sayi1
+while sayi2>i:
+        if i>sayi1:
+            print(f"{i}",end=" ")
+        i+=1
+"""
 
 
 
+
+"""
+while sayi1>i :
+    if sayi1<i:
+        sayi1,i=i,sayi1
+    elif sayi1<sayi2:
+        sayi1,sayi2=sayi2,sayi1
+    elif i<sayi2:
+        i,sayi2=sayi2,i
+    print(f"{i}")
+    i+=1
+"""
+
+
+
+
+
+"""
+while i :
+    if sayi1<i:
+        sayi1,i=i,sayi1
+    elif sayi1<sayi2:
+        sayi1,sayi2=sayi2,sayi1
+    elif i<sayi2:
+        i,sayi2=sayi2,i
+        print(f"{sayi1}>{i}>{sayi2}")
+    i+1
+"""
+
+
+
+"""
+s1 = int(input("l. s1. giriniz : "))
+s2 = int(input("l. s2. giriniz : "))
+s3 = int(input("l. s3. giriniz : "))
+if s1<s2:
+    s1, s2 = s2, s1
+if s1<s3:
+    s1, s3 = s3, s1
+if s2<s3:
+    s2, s3 = s3, s2
+print(f"{s1}>{s2}>{s3}")
+"""
 
 #endregion
