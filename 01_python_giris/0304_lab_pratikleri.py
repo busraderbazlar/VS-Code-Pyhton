@@ -8,7 +8,7 @@ while x<5:
 """
 a=input("Metin Giriniz:")
 x=0
-i = int(input("Kaç kez tekrar etmeli"))
+i = int(input("Kaç kez tekrar etmeli:"))
 while x<i:
     print(a)
     x+=1
