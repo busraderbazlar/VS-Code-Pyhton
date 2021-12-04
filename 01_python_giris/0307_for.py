@@ -107,9 +107,23 @@ lütfen sayı giriniz sayı giriniz: 30
 1 2 3 5 6 10 15 30
 """
 
-x= int(input("Lütfen sayı giriniz\t:"))
+"""x= int(input("Lütfen sayı giriniz\t:"))
 for i in range(1,x+1):
     if x%i==0:
         print(f"{i}", end=" ")
+"""
+#endregion
+
+#region ornek_2
+"""say=0
+son= int(input("1.son değeri giriniz \t:"))
+for i in range(2,son+1):
+    for j in range (1,i):
+        if i % j ==0:
+            say+=1
+    if say<2:
+        print(i, end=" ")
+    say = 0"""
+
 
 #endregion

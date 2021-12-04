@@ -27,14 +27,19 @@ print(isim[1])
 print(isim[2])
 print(isim[3])
 for i in range(len(isim)):
-    print(isim[i])
-"""
+    print(isim[i])"""
+
 """isim = "EGE BARTU"
 print(isim[len(isim)-1])
 print(isim[len(isim)-2])
 print(isim[len(isim)-3])
 #forlu hali
 for i in range((len(isim)-1),-1,-1):
-    print(isim[i], end=" ")"""
+    print(isim[i], end=" ")
+"""
 
 
+"""meyveler= str(input("Lütfen bir meyve giriniz\t:"))
+for i in meyveler:
+    if meyveler[i] == "E":
+        print(i)"""

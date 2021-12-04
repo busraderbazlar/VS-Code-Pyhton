@@ -19,17 +19,17 @@ while i<10:
 #endregion
 
 #region ornek_2 break
-"""
-i=1
+
+"""i=1
 x= int(input("Aradığınız stok id: "))
-print(b)
+print("b")
 while i<10:
     print("b", end=" ")
     if i==2:
         break
     i+=1
-print(c)
-"""
+print("c")"""
+
 #endregion
 
 
@@ -73,16 +73,51 @@ print("b")
 """
 #endregion
 
-#region aliştirma
-eb=0
+""""""
+"""eb,say=0,0
 while True:
-    x=int(input("Lütfen bir sayı giriniz, çıkmak için -1'e basınız:"))
-    if x==-1:
+    sayi = int(input("Lütfen bir sayı giriniz, çıkmak için - 1'e basınız\t:"))
+    if sayi == -1:
         break
-    if x>eb:
-        eb=x
-if eb==0: #if eb==0 ve if eb: yani if==True olarak bilindiği için if eb: girilebilir
-    print("Hiç Bir Sayı Girmediniz")
+    say +=1
+    if sayi>eb:
+        eb=sayi
+if say:
+    print(f"Girdiğiniz en büyük sayı {eb}")
 else:
-    print(f"{eb}")
+    print("Hiç bir sayı girmediniz")"""
 
+
+#region pratik_1
+"""tekSayilarToplami=0
+while True:
+    a=int(input("Lütfen bir sayı giriniz,çıkmak için -1 basınız\t: "))
+    if a==-1:
+        break
+    if a%2==0:
+        print("Lütfen tek sayı giriniz\t:")
+    else:
+        tekSayilarToplami+=a
+print(f"Listedeki tek sayıların toplamı {tekSayilarToplami}")"""
+#endregion
+
+#region pratik_2
+"""while True:
+    secim=int(input(
+    [1] km-mil
+    [2] mil-km
+    [3] çık
+        "))
+    if secim ==1:
+        km = float(input("Lütfen km bilgisi giriniz \t:"))
+        mil = km*0.622137
+        print(f"girilen {km} değerinin mil hesaplaması {mil}")
+    elif secim ==2:
+        mil = float(input("Lütfen mil bilgisi giriniz \t:"))
+        km = mil*0.622137
+        print(f"girilen {mil} değerinin km hesaplaması {km}")
+    elif secim ==3:
+        break
+    else:
+        print("hatalı seçim")"""
+#endregion

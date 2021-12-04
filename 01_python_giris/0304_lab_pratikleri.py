@@ -336,8 +336,8 @@ while i<5:
 * * 
 *
 """
-"""
-i=0
+
+"""i=0
 j=5
 while i<5:
     while j>0:
@@ -345,10 +345,10 @@ while i<5:
         print(" * ", end=" ")
     i+=1
     j=5-i
-    print()
-"""
-"""
-i=0
+    print()"""
+
+
+"""i=0
 j=5
 while i<5:
     while j>i:
@@ -356,10 +356,27 @@ while i<5:
         print(" * ", end=" ")
     i+=1
     j=5
-    print()
+    print()"""
+
+"""
+ *  
+ *   *  
+ *   *   *
+ *   *   *   *
+ *   *   *   *   *
 """
 """
 i=0
+j=0
+while i<5:
+    while j<=i:
+        j+=1
+        print(" * ", end=" ")
+    i+=1
+    j=0
+    print()"""
+
+"""i=0
 j=0
 b=0
 while i<5:
@@ -373,8 +390,8 @@ while i<5:
     i+=1
     j=0
     b=0
-    print()
-"""
+    print()"""
+
 """
 i=0
 j=0
@@ -508,4 +525,61 @@ if s2<s3:
 print(f"{s1}>{s2}>{s3}")
 """
 
-#endregion
+"""#endregion
+#1-99 arasındaki tek sayılar, her bir 10 sayıda alt satıra alalım.Mod yöntemi ile.
+i=0
+while i<=99:
+    if i!=0:
+        if i%2!=0:
+            print(i, end=" ")
+        if i%10==0:
+            print()
+    i+=1"""
+
+
+"""j=0
+i=0
+n=6
+while i<5:
+    while j<6:
+        if n>i+1:
+            print(" ", end=" ")
+        else:
+            print("*", end=" ")
+        n-=1
+        j+=1
+    j=0
+    i+=1
+    n=6
+    print()"""
+
+"""i=0
+toplam=0
+while i<101:
+    toplam+=i
+    i+=1
+print(toplam)"""
+"""
+i=1
+while i<11:
+    print(i**2, end=" ")
+    i+=1"""
+
+"""sum=0
+i=1
+while i<11:
+    sum+=i
+    i+=2
+print(sum)"""
+
+"""
+i=0
+j=0
+while i<5:
+    while j<=i:
+        j+=1
+        print(" * ", end=" ")
+    i+=1
+    j=0
+    print()"""
+
