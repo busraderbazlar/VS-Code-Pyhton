@@ -18,7 +18,8 @@ else:
 sayilar = [11, 5, 36, 78, 99, 2]
 aradiginizEleman=int(input("Lütfen aradığınız elemanı giriniz\t:"))
 for i in sayilar:
-    print(i)
+    if i == aradiginizEleman:
+        print(f"{aradiginizEleman} elemanı Listenin {i+1}. elemanıdır.")
 """
 
 """isim=str(input("Lütfen isminizi giriniz\t:"))#stringlerde bir listedir. Her bir kelimenin harflerini eleman olarak algılar.
@@ -39,7 +40,9 @@ for i in range((len(isim)-1),-1,-1):
 """
 
 
-"""meyveler= str(input("Lütfen bir meyve giriniz\t:"))
+meyveler= str(input("Lütfen bir meyve giriniz\t:"))
 for i in meyveler:
-    if meyveler[i] == "E":
-        print(i)"""
+    if meyveler[0] == "E":
+        print(i, end=" ")
+    else:
+        print("Yazdığınız Eleman E harfi ile başlamamaktadır. ")

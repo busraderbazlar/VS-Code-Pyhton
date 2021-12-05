@@ -33,11 +33,37 @@ print(meyveler[:3])
 """
 # endregion 
 
-# region slice_ornek
+# region slice_ornek 
 """
 url = input("lütfen site adı giriniz: ")
 if not url[-3:] == "com" or not url[0:3] == "www":
     print("lütfen url formatına dikkat ediniz")
 else:
-    print(f"İnternet adresi → {url}")
+    print(f"İnternet adresi → {url}") #slice sadece listedeki belirli kısımları alır ve geri döndürür.
+"""
+"""
+miniMiniBirler= ["buse","ender","büşra","ömer","enderr","selin","ece","ege"]
+print(miniMiniBirler[0:3])#slice bu şekilde [0:3] 0-1-2 (0'dan başla 3. elemana kadar olan sayılar) arası liste elemanları alınır.[start,finish(dahil değil)]
+
+#yada 
+
+isim= "ender barış"
+ad = isim[0:5]
+print (ad)
+soyad = isim [6-12]
+soyad1 = isim [6:]
+print(soyad1)
+sonKarakter = isim[-1]
+print(sonKarakter) #sondan başa doğru
+print(isim[::-1])
+adSoyad = isim [:]
+print(isim[1:])
+print(isim[1:9])
+print(isim[1:9:2])#birden dokuza kadar 2 şerli
+url = "www.azizbektas.gov"
+print(url[-3:])#-3den-1'e kadar "com"
+if not url[-3:]=="com" and not url[-3:] =="gov":
+    print("hatalı url")
+else:
+    print("Hatalı url, edu olmalı")
 """

@@ -37,13 +37,12 @@ sebzeler = []
 sebzeler.pop() #kod sonunda şunu söyler ben şu elemenı sildim."""
 
 """ogrenciler = ["buse", "büşra", "ömer", "kaçak", "ender", "selin"]
-print(ogrenciler.pop(2))
-for i in ogrenciler:
-    print(i)"""
+print(ogrenciler.pop(3))"""
+
 
 # region clear→listeyi_temizler
-"""
-meyveler = ["elma", "armut", "muz", "ayva", "üzüm"]
+
+"""meyveler = ["elma", "armut", "muz", "ayva", "üzüm"]
 print(f"listemizin ilk hali → {meyveler}")
 meyveler.clear()
 print(meyveler)
@@ -62,15 +61,15 @@ print(f"listemizin son hali → {meyveTabagi}")
 # endregion
 
 # region count→elaman_sayisi
-"""
-listeRakamlar = [2, 5, 6, 1, 9, 7, 5, 9]
+
+"""listeRakamlar = [2, 5, 6, 1, 9, 7, 5, 9]
 arananEleman = 9
 elemanAdedi = listeRakamlar.count(arananEleman)
 print(f"listemizdeki {arananEleman} elemanı adedi→ {elemanAdedi}")
 meyveler = ["elma", "armut", "muz", "ayva", "muz", "üzüm"]
-print(meyveler.count("muzz")) #bulunmadığında kızmaz. Count saymak için kullanılır raramak içinde kullanılabilir.
-"""
-# endregion
+print(meyveler.count("muzz")) #bulunmadığında kızmaz. Count saymak için kullanılır raramak içinde kullanılabilir."""
+
+# endregion"""
 
 # region ornek_1
 """

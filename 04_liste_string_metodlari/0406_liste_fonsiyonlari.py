@@ -5,11 +5,11 @@ print(f"listenin en küçük değeri {min(listeRakamlar)}")
 print(f"listenin en küçük değeri {max(listeRakamlar)}")
 print(min(3, 9))
 """
-
+"""
 x= int(input("Lütfen Başlangıç değeri giriniz:"))
 y= int(input("Lütfen Bitiş değeri giriniz:"))
 for i in range (min(x,y), max(x,y)+1):
-    print(i)
+    print(i)"""
 
 #manuel olarakta algoritma yazabiliriz
 """
