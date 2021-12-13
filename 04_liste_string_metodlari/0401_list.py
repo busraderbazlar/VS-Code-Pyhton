@@ -54,8 +54,11 @@ for i in sayilar:
         x+=1"""
 
 
-"""sayilar=[3,55,63,99,1,12,74] #api #json #parsing
-for i in range(len(sayilar)):
-    if sayilar[i]>50:
-        print(f"{i}. öğrencinin notu {sayilar[i]}")"""
+""" """
+"""adet = 0
+list = [9,55,72,89,90,45,64]
+for i in list:
+    if i %2==0:
+        adet +=1
+print(f"Listedeki tek sayıların adeti {adet}")"""
 
