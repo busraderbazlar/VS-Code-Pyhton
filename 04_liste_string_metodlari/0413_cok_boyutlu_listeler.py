@@ -72,3 +72,30 @@ for i in range (len(liste)):
 #print(a[1][1])
 """
 
+# region for_ile_erisim_1
+"""
+1 2 3 4
+5 6 7 8
+a = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]]
+for  i in range(len(a)):
+    for j in range(len(a[i])):
+        print(f"{a[i][j]}", end= " ")
+    print()
+"""
+# endregion
+
+# region for_ile_erisim_2
+"""
+kurumBilgisayarlari=[
+    [1, "Kat1-PCCCC", 45, "chrome.exe"], 
+    [2, "Desktop-Lab1", 84, "chrome.exe, camtasia.exe"], 
+    [3, "Misafir-PC", 25, "excel.exe"]
+    ]
+print(f"satır sayısı → {len(kurumBilgisayarlari)}")
+print(f"sütun sayısı → {len(kurumBilgisayarlari[0])}")
+for i in range(len(kurumBilgisayarlari)):    #0,1,2
+    for j in range(len(kurumBilgisayarlari[i])):
+        print(f"{kurumBilgisayarlari[i][j]}\t", end="" )
+    print()
+"""
+# endregion
