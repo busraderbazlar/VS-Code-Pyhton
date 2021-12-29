@@ -150,7 +150,7 @@ print(tekilListe)"""
 
 def fonk(arg):
     print(arg)
-    del ar[0]
+    del arg[0]
 
 myList= [34,35]
 fonk(myList)

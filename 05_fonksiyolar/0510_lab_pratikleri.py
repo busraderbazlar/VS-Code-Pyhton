@@ -53,3 +53,4 @@ def kayıtOl(tc, ad="isimsiz", email="@"):
 kayıtOl("1111111")
 
 # endregion
+
