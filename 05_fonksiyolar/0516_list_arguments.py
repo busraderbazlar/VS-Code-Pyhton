@@ -27,19 +27,19 @@ ortalama([3, 5, 9, 15, 16])
 ortalama([3, 5, 9, 15, 16])
 """
 
-"""import time
+import time
 from datetime import datetime
 cTime = time.time()
 print(cTime)
 print(datetime.now())
-print(datetime.now().time.timestamp()) #time.time ile aynı
-print(datetime.fromisoformat("2000-30-12").timestamp()) #stringi tarihe çevirdik sonra, tarihi times tampa çevirdirk.
+#print(datetime.now().time.timestamp()) #time.time ile aynı
+#print(datetime.fromisoformat("2000-30-12").timestamp()) #stringi tarihe çevirdik sonra, tarihi times tampa çevirdirk.
 
 #epoch time
 #1/1/1970 - unix-linux- macos-win 1970 tariihnden geçen saniye"""
 
 
-import time
+"""import time
 from datetime import datetime
 
 def urunTarihKontrol(liste):
@@ -59,6 +59,6 @@ urunTarihleri = [
 
 ]
 
-urunTarihKontrol(urunTarihleri)
+urunTarihKontrol(urunTarihleri)"""
 
 # endregion

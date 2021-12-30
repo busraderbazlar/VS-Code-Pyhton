@@ -122,7 +122,7 @@ def siparisListele():
     for i in jsonOrders["<Gerekli Key İle Değiştir>"]:
         epochSaniye = #<Gerekli Key İle Değiştir>
         gunumuzZamani = #<Time Kütüphanesi Gerekli Fonksiyon İle Değiştir>
-        print(f"Gerekli Output İçin Formatla")
+        print(f"")
     print("+--------+-----------------------+-----------------------+-----------------------+-----------------------+-----------------------+")
 
 # 18 → Sipariş Id'ye göre arama yapalım
