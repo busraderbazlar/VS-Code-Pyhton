@@ -55,7 +55,7 @@ def musteriAra(musteriId):
             print(f"{musteriId} ID'li müşteri bulundu. Detay Listesi")
             print("==========================")
             metinKontrol(i)
-            print(f"Şirketinin adı {i['companyName']}, ulaşılacak kişi adı {i['contactName']}, adresi {i['address']}, ülkesi {i['country']}, şehri {i['city']}")          
+            print(f"Şirketinin adı: {i['companyName']}\nUlaşılacak kişi adı: {i['contactName']}\nAdresi: {i['address']}\nÜlkesi: {i['country']}\nŞehri: {i['city']}")          
             break
         else:
             print(f"{musteriId} ID'li müşteri bulunamadı")
@@ -81,7 +81,7 @@ def siparisAra(siparisId):
             risetimeInFormattedString = time.ctime(risetimeInEpochSeconds)
             print(f"{siparisId} ID'li sipariş bulundu. Detay Listesi")
             print("==========================")
-            print(f"Sipariş id : {i['order']['id']}\nMüşteri id : {i['order']['customerId']}\nSipariş tarihi : {i['order']['orderDate']}\nSipariş adresi : {i['order']['shipAddress']}\nŞehri : {i['order']['shipCity']}\nÜlkesi : {i['order']['shipCountry']}\n")
+            print(f"Sipariş id : {i['order']['id']}\nMüşteri id : {i['order']['customerId']}\nSipariş tarihi : {risetimeInFormattedString}\nSipariş adresi : {i['order']['shipAddress']}\nŞehri : {i['order']['shipCity']}\nÜlkesi : {i['order']['shipCountry']}\n")
             nereye = i['order']['shipCity']          
             cevap = input(f"Kargo Rotasını {nereye.upper()} Şehri İçin Görmek İster misiniz? [e/E] :")
             if cevap.lower()=="e":
@@ -91,7 +91,16 @@ def siparisAra(siparisId):
                     mainMapApiUrl="http://www.mapquestapi.com/directions/v2/route?key=yAApx2G1tnQAa3QSNsIU0CdvnB3ZfVoA&from="+nereden+"&to="+nereye+"\""""
                     mapApi=requests.get(mainMapApiUrl)
                     mapApiorders= mapApi.json()
-                    print(mapApiorders)
+                    print("==========================")
+                    print(mapApiorders['route'].keys())
+                    print(f"Toplam km: {mapApiorders['route']['distance']}")
+                    print(f"Toplam süre : {mapApiorders['route']['time']}")
+                    print("==========================")
+                    for i in mapApiorders['route']['legs']:
+                        print(i['destNarrative'])
+                        print(i['origNarrative'])
+                        for a in i['maneuvers']:
+                            print(f"{a['narrative']}")
                     break
             break
     else:
