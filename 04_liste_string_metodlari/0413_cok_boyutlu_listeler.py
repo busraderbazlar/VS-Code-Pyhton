@@ -28,18 +28,19 @@ print(a[1][1])#1.satırın 1. elemeanı
 a[1][1]=44
 print(a[1][1])
 """
-"""a = [[1, 2, 3, 4], [5, 6, 7, 8]] #liste içinde liste birden fazla listenin ortak değişkene sahip olması
+"""
+a = [[1, 2, 3, 4], [5, 6, 7, 8]] #liste içinde liste birden fazla listenin ortak değişkene sahip olması
 for i in range (2):#0,1
     for j in range (4): #0,1,2,3
-        print(a[i][j], end=" ")
+        print(a[i][1] and a[i][2], end=" ")
     print()
 
 for i in range (len(a)):#0,1
     for j in range (4): #0,1,2,3
         print(a[i][j], end=" ")
-    print()"""
+    print()
 
-"""
+
 a = [[1, 2, 3, 4], [5, 6, 7, 8, 9], [9,9,9,9,9]] #liste içinde liste birden fazla listenin ortak değişkene sahip olması
 """
 # endregion

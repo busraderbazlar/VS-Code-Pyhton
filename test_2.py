@@ -58,27 +58,26 @@ def MakeListOfFreeFields(board):
     for row in range(3):  # rows
         for col in range(3):  # columns
             if board[row][col] not in ['O', 'X']:  # boş kare mi?
-                # evet ise append et
-                free.append(board[row][col])
+                free.append((row,col))
     return free
 
-# 5 → Kazananı Belirleyelim
+#→ Kazananı Belirleyelim
 # 5 → Kazananı Belirleyelim
 def VictoryFor(board, sgn):
     if sgn == "X":  # X için mi board'u kontrol edecek?
         who = 'me'  # PC
     elif sgn == "O":  # O için mi board'u kontrol edecek?
         who = 'you'  # Kullanıcı
-    cross1 = cross2 = True  # for diagonals
+    cross1 = cross2 = False 
     for rc in range(3):
-        if board[0][rc] or board[1][rc] or board[2][rc]:  # satırları kontrol edelim
+        if board[0][rc] == board[1][rc] == board[2][rc] == sgn:
             return who
-        if board[rc][0] or board[rc][1] or board[rc][2]: # sütunları kontrol edelim
+        if board[rc][0] == board[rc][1] == board[rc][2] == sgn:
             return who
-        if board[0,0] and board[1,1] and board[2,2] != sgn:  # 1. köşegeni kontrol edelim
-            cross1 = False
-        if [0,2] and board[1,1] and board[2,0] != sgn:  # 2. köşegeni kontrol edelim
-            cross2 = False
+        if board[0][0] == board[1][1] == board[2][2] == sgn: # 1. köşegeni kontrol edelim
+            cross1 = True
+        if board[0][2] == board[1][1] == board[2][0] == sgn:  # 2. köşegeni kontrol edelim
+            cross2 = True
     if cross1 or cross2:
         return who
     return None
@@ -88,10 +87,12 @@ def VictoryFor(board, sgn):
 def DrawMove(board):
     free = MakeListOfFreeFields(board)  # boş olan karelerden bir liste tanımlayalım
     cnt = len(free)
-    if cnt > 0:  # list boş değil ise, 'X' i set edeceğimiz kareyi random seçelim
-        this = randrange(cnt)
-        row, col = this,this
+    if  cnt > 0:  # list boş değil ise, 'X' i set edeceğimiz kareyi random seçelim
+        this = random.randrange(cnt)
+        this = this-1 
+        row, col = this // 3, this % 3
         board[row][col] = "X"
+
 
 
 # 7 → main
@@ -107,12 +108,13 @@ while len(free):
     if humanturn:
         EnterMove(board)
         victor = VictoryFor(board, 'O')
+        humanturn = False
     else:
         DrawMove(board)
         victor = VictoryFor(board, 'X')
+        humanturn = True
     if victor != None:
         break
-    humanturn = True
     free = MakeListOfFreeFields(board)
 
 DisplayBoard(board)
